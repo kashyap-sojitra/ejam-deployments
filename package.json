@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
-    "backend-start": "node server/index.js",
+    "backend-start": "cd server && npm install && node server/index.js",
     "start": "concurrently \"npm-run-all -p backend-start start-js\"",
     "build": "npm start && react-scripts build",
     "test": "react-scripts test",
