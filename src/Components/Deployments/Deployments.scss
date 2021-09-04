@@ -1,0 +1,92 @@
+$headerFont: 20px;
+$subHeaderFont: 16px;
+$bodyFont: 12px;
+$primaryTextColor: #333;
+$boldText: 600;
+$semiBoldText: 500;
+$inputBoxBorder: 1px solid #DCDCDC;
+$inputBoxOutline: 1px solid #808080;
+$primaryColor: #6979f8;
+$whiteFontColor: #fff;
+
+.Deployments {
+    padding: 20px;
+    color: $primaryTextColor;
+
+    .form-container {
+        width: 50%;
+        margin-bottom: 20px;
+
+        .form-header {
+            font-weight: $boldText;
+            font-size: $headerFont;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+        }
+        .form-item {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                height: 20px;
+                border: $inputBoxOutline;
+                font-size: $bodyFont;
+            }
+            input:focus {
+                outline: $inputBoxBorder;
+            }
+        }
+        .form-item-label {
+            font-weight: $semiBoldText;
+            margin-bottom: 5px;
+            font-size: $subHeaderFont;
+        }
+        .submit-button {
+            font-size: $subHeaderFont;
+            background: $primaryColor;
+            color: $whiteFontColor;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px 0;
+            width: 33%;
+            box-shadow: unset;
+            border: unset;
+        }
+    }
+
+    .deployment-list-container{
+        .table-header {
+            font-size: $headerFont;
+            margin-bottom: 20px;
+            font-weight: $boldText;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 23%) 8%;
+        }
+        .header-label, .table-item {
+            border: $inputBoxBorder;
+            padding: 5px 0;
+        }
+        .table-item  {
+            padding: 0 10px;
+            word-wrap: break-word;
+        }
+        .deployment-item-header {
+            font-size: $subHeaderFont;
+            font-weight: $semiBoldText;
+            text-align: center;
+        }
+        .action-item {
+            padding: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .delete-icon{
+            cursor: pointer;
+        }
+    }
+}
