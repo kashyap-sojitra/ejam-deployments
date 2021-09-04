@@ -4,5 +4,7 @@
 # after successfull clone please fire following commands
 -> cd ejam-deployments
 
+-> npm install
+
 -> npm run build
 # run the app in the browser with the url : http://localhost:8080/
