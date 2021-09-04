@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 function connect() {
-  return mongoose.connect(process.env.DB, {
+  return mongoose.connect("mongodb+srv://pingpong:7tXnhfQCyjXTHERu@cluster0.hjm9k.mongodb.net/deployment?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
