@@ -1,12 +1,7 @@
 # clone repo using the following command
--> URL
+-> git clone https://github.com/kashyap-sojitra/ejam-deployments.git
 
 # after successfull clone please fire following commands
 -> cd ejam-deployment
--> npm install
--> npm run build
--> cd server
--> npm install
--> node index.js
-
-# run the app in the browser with the url : http://localhost:8080/
+-> npm start
+# run the app in the browser with the url : http://localhost:3000/
